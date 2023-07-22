@@ -1,5 +1,5 @@
-a = 11
-b = a * 10
+a <- 11
+b <- a * 10
 print(c(a, b)) # c is used to concatenate
 
 # Run is used to execute selected lines
