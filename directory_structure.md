@@ -53,3 +53,5 @@
 - 📂 **5_Week**
   - [1_intro.md](5_Week/1_intro.md)
   - [GTPvar.csv](5_Week/GTPvar.csv)
+- 📂 **6_Week**
+  - [1_intro.md](6_Week/1_intro.md)

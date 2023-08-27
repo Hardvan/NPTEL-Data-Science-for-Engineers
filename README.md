@@ -57,3 +57,5 @@ This repository contains the code and files for the NPTEL course: **Data Science
 - 📂 **5_Week**
   - [1_intro.md](5_Week/1_intro.md)
   - [GTPvar.csv](5_Week/GTPvar.csv)
+- 📂 **6_Week**
+  - [1_intro.md](6_Week/1_intro.md)

@@ -51,3 +51,5 @@
 📂 5_Week
   - 1_intro.md
   - GTPvar.csv
+📂 6_Week
+  - 1_intro.md
