@@ -1,8 +1,4 @@
-# Data Science for Engineers
-
-This repository contains the code and files for the NPTEL course: **Data Science for Engineers**
-
-## Directory Structure
+# Directory Structure
 
 - 📂 **NPTEL Data Science for Engineers (Current Directory)**
   - [.gitignore](./.gitignore)
@@ -33,7 +29,7 @@ This repository contains the code and files for the NPTEL course: **Data Science
     - [Lec6_Operations.R](1_Week/04_Operations/Lec6_Operations.R)
   - 📂 **05_Functions**
     - [Lec7_Functions.R](1_Week/05_Functions/Lec7_Functions.R)
-    - [Lec7*Programing in R* scripts and functions.pdf](1_Week/05_Functions/Lec7_Programing%20in%20R_%20scripts%20and%20functions.pdf)
+    - [Lec7_Programing in R_ scripts and functions.pdf](1_Week/05_Functions/Lec7_Programing%20in%20R_%20scripts%20and%20functions.pdf)
     - [Lec8_Programming in R_functions.pdf](1_Week/05_Functions/Lec8_Programming%20in%20R_functions.pdf)
   - 📂 **06_Control_Structures**
     - [Lec9_Control_Structures.R](1_Week/06_Control_Structures/Lec9_Control_Structures.R)
