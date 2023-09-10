@@ -71,8 +71,12 @@ The pair for which $x_i = x_j$ and $y_i = y_j$ are not considered.
 ### Outliers
 
 - Points which do not conform to the general pattern of the data.
-- For 5% level of significance, a sample is considered an outlier if it is more than 1.96 standard deviations away from the mean. (i.e., it lies outside [-1.96, 1.96])
+- For 5% level of significance, a sample is considered an outlier if it is more than 1.96 standard deviations away from the mean. (i.e., it lies outside [-1.96, 1.96]) (can be approximated to [-2, 2])
 
 ## Lecture 5: Simple Linear Regression Modelling
 
 See the code [simple_linear_regression_modelling.r](./2_simple_linear_regression_modelling.r)
+
+## Lecture 6: Simple Linear Regression Model Assessment
+
+See the code [simple_linear_regression_model_assessment.r](./2_simple_linear_regression_model_assessment.r)

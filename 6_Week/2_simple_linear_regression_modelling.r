@@ -47,3 +47,70 @@ abline(model_bonds)
 # * 4) Look at summary of the model
 print("Summary of the model:")
 summary(model_bonds)
+
+# First level model assessment
+# Test on β̂ 1 is a two-sided test
+# At α = 0.05 (95% confidence level) (confidence level = 1- significance level.)
+print("First level model assessment:")
+alpha <- 0.05
+n <- nrow(bonds)
+p <- 1
+qt(p = 1 - alpha / 2, df = n - p - 1) # critical value of t
+
+print("SSE:")
+SSE <- sum(model_bonds$residuals^2)
+print(SSE)
+
+print("SST:")
+SSR <- sum((model_bonds$fitted.values - mean(bonds$BidPrice))^2)
+print(SSR)
+
+print("F-statistic:")
+F_stat <- (SSR / SSE) * (n - 2)
+print(F_stat)
+
+# Second level model assessment
+
+# Checking for outliers in the data
+
+# Residual Analysis
+plot(model_bonds$fitted.values, rstandard(model_bonds),
+    main = "Residual Plot",
+    xlab = "Predicted Values for Bid Price",
+    ylab = "Standardized Residuals"
+)
+abline(h = 2, lty = 2) # adding a horizontal line at 2, lty = 2: dashed line
+abline(h = -2, lty = 2)
+
+# To know the indices of the outliers, use the identify() function
+
+# Identifying indices of the outliers (Click on the points which are outliers)
+# X11() # opens a new window (uncomment to test)
+plot(model_bonds$fitted.values, rstandard(model_bonds),
+    main = "Residual Plot",
+    xlab = "Predicted Values for Bid Price",
+    ylab = "Standardized Residuals"
+)
+abline(h = 2, lty = 2)
+abline(h = -2, lty = 2)
+# identify(model_bonds$fitted.values, rstandard(model_bonds)) # uncomment to test
+
+# 4 13 34 35 are displayed as outliers
+
+# Removing the outliers
+new_bonds <- bonds[-c(4, 13, 34, 35), ]
+
+# New model
+new_model_bonds <- lm(BidPrice ~ CouponRate, data = new_bonds)
+
+# Summary of the new model
+print("Summary of the new model:")
+summary(new_model_bonds)
+
+# Plotting the new model
+plot(new_bonds$CouponRate, new_bonds$BidPrice,
+    main = "Bid Price v/s Coupon Rate without outliers",
+    xlab = "Coupon Rate",
+    ylab = "Bid Price"
+)
+abline(new_model_bonds)
