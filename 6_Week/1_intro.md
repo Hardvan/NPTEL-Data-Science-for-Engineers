@@ -80,3 +80,5 @@ See the code [simple_linear_regression_modelling.r](./2_simple_linear_regression
 ## Lecture 6: Simple Linear Regression Model Assessment
 
 See the code [simple_linear_regression_model_assessment.r](./2_simple_linear_regression_model_assessment.r)
+
+## Lecture 7: Multiple Linear Regression
