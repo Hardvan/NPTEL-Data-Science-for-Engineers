@@ -31,3 +31,5 @@ A method of cross validation where we randomly split the training set into $k$ g
 
 - LOOCV fits the model $n$ times
 - k-fold CV fits the model $k$ times
+
+## Lecture 2: Multiple Linear Regression Model Building and Selection
