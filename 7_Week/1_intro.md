@@ -35,3 +35,103 @@ A method of cross validation where we randomly split the training set into $k$ g
 ## Lecture 2: Multiple Linear Regression Model Building and Selection
 
 Refer this code: [multiple_linear_regression](./2_multiple_linear_regression.r)
+
+## Lecture 3: Classification
+
+Assigning classes to data points
+
+## Lecture 4: Logistic Regression
+
+- Classification technique
+- Decision boundary derived based on probability interpretation
+
+### Binary Classification
+
+- No. of categories = 2
+- Simple Yes/No, True/False, 0/1
+
+Qualititave inputs ("Yes", "No") are to be converted to quantitative inputs (1, 0) for logistic regression.
+
+### Linear Classifier
+
+- Decision function is linear
+- Binary classification can be performed based on the side of the half-plane that the data falls in
+
+### Logit Model
+
+- p(x) = $\frac{e^{\beta_0 + \beta_1x}}{1 + e^{\beta_0 + \beta_1x}}$
+- If $\beta_0 + \beta_1x$ is non-negative, and $p(x) > 0.5$, then we predict $Y = 1$
+- else, we get p < 0.5 and predict $Y = 0$
+- Decision boundary is the equation $\beta_0 + \beta_1x$
+
+### Regularization
+
+- When large no. of independent variables are present, logistic regression tends to overfit. To prevent this, we need to penalize the coefficients. This is called regularization.
+
+## Lecture 5: Performance Measures
+
+![Alt text](./images/image1.png)
+
+Terminology:
+
+- TP: True Positive
+- TN: True Negative
+- FP: False Positive (Type I Error)
+- FN: False Negative (Type II Error)
+- N = TP + TN + FP + FN (Total no. of observations)
+
+### Measures of Performance
+
+- Accuracy: Overall effectiveness of a classifer
+  - $\frac{TP + TN}{N}$
+
+(Total no. of TP labels = TP + FN)  
+(Total no. of TN labels = TN + FP)
+
+- Sensitivity: Effectiveness of a classifer to identify positive labels
+
+  - $\frac{TP}{TP + FN}$
+
+- Specificity: Effectiveness of a classifer to identify negative labels
+
+  - $\frac{TN}{TN + FP}$
+
+- Balanced Accuracy: Average of sensitivity and specificity
+
+  - $\frac{sensitivity + specificity}{2}$
+
+- Prevalence: How often does the yes class occur in the data
+
+  - $\frac{TP + FN}{N}$
+
+- Positive Predictive Value (PPV): How often does the yes prediction occur when the model predicts yes
+
+  - $\frac{TP}{TP + FP}$
+
+- Negative Predictive Value (NPV): How often does the no prediction occur when the model predicts no
+
+  - $\frac{TN}{TN + FN}$
+
+- Detection Rate
+
+  - $\frac{TP}{N}$
+
+- Detection Prevalence
+
+  - $\frac{TP + FP}{N}$
+
+- Kappa Statistic: Compares observed accuracy with expected accuracy
+
+  - $\frac{observed accuracy - expected accuracy}{1 - expected accuracy}$
+
+- Observed Accuracy (OA) = $\frac{a + d}{N}$
+
+- Expected Accuracy (EA) = $\frac{(a + b)(a + c) + (c + d)(b + d)}{N^2}$
+
+where a = TP, b = FP, c = FN, d = TN
+
+### ROC (Receiver Operating Characteristic) Curve
+
+## Lecture 6: Logistic Regression Implementation in R
+
+Refer this code: [logistic_regression](./3_logistic_regression.r)
