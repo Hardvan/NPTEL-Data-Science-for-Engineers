@@ -33,3 +33,5 @@ A method of cross validation where we randomly split the training set into $k$ g
 - k-fold CV fits the model $k$ times
 
 ## Lecture 2: Multiple Linear Regression Model Building and Selection
+
+Refer this code: [multiple_linear_regression](./2_multiple_linear_regression.r)
