@@ -45,4 +45,4 @@ sum(is.na(irisdata))
 # finding the mean of the columns PetalLength and PetalWidth in one line
 print("Mean of PetalLength and PetalWidth")
 lapply(irisdata[, 3:4], mean)
-apply(irisdata[, 3:4], 2, mean)
+apply(irisdata[, 3:4], 2, mean) # 2 is for column wise
