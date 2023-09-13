@@ -47,3 +47,7 @@ crashTest_1_TEST[logis_pred > 0.5, "Logis_Pred"] <- "SUV"
 
 # Confusion Matrix
 confusionMatrix(table(crashTest_1_TEST$CarType, crashTest_1_TEST$Logis_Pred), positive = "SUV")
+
+# Structure of the matrix
+# [TP, FP]
+# [FN, TN]
