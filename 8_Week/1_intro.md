@@ -57,7 +57,7 @@ Can be both **quantitative** and **qualitative**
 
 ## Lecture 2: K-nearest neighbours implementation in R
 
-See the code [here](./2_car_service.r)
+See the code [here](./2_knn.r)
 
 ## Lecture 3: K-means Clustering
 
@@ -92,3 +92,7 @@ where $\mu_i$ is the mean of points in $S_i$.
 
 - Could converge to a local minima, therefore role of initial cluster centers is very important
 - If the clusters are not spherical, then K-means can fail to identify the correct no. of clusters
+
+## Lecture 4: K-means implementation in R
+
+See the code [here](./3_k_means.r)
