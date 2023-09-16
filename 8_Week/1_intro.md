@@ -5,6 +5,8 @@
 - **Non-parametric method** (means no assumptions about the data)
 - **Lazy learning algorithm** where all computation is deferred until classification
 - **Instace-based learning algorithm** where the function is approximated locally
+- **Supervised learning algorithm** where the training data is labeled
+- **Majority voting algorithm** where the class label is assigned to the majority of the k nearest neighbors
 
 ### Why kNN?
 
@@ -52,3 +54,5 @@ Can be both **quantitative** and **qualitative**
   - When the no. of features is too large and redundant, feature extraction is required
   - If features are carefully chosen, classification will be better
 - Curse of dimensionality (as the number of features increases, the number of data points required to generalize accurately grows exponentially)
+
+## Lecture 2: K-nearest neighbours implementation in R
