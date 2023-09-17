@@ -6,9 +6,25 @@
 2. **Validation Set**: Used to `tune` the model
 3. **Test Set**: Used to `evaluate` the model
 
+### Validation Set Approach
+
+- Split the data into training and validation sets
+- Fit the model on the training set
+- Evaluate the model on the validation set
+- Repeat the process with different training/validation set splits
+- Select the model with the lowest validation set error
+
+#### Advantages
+
+- Simple to implement
+- Computationally inexpensive
+- Easy to understand
+
 ### Leave One Out Cross Validation (LOOCV)
 
-A method of cross validation where we leave one observation out of the training set and use it as the validation set. We repeat this process until each observation has been used as the validation set. We then average the results to get the LOOCV estimate.
+- A method of cross validation where we leave one observation out of the training set and use it as the validation set.
+- We repeat this process until each observation has been used as the validation set.
+- We then average the results to get the LOOCV estimate.
 
 #### Advantages
 
@@ -23,7 +39,12 @@ A method of cross validation where we leave one observation out of the training 
 
 ### k-Fold Cross Validation
 
-A method of cross validation where we randomly split the training set into $k$ groups of approximately equal size. The first group is treated as the validation set and the model is fit on the remaining $k-1$ groups. We repeat this process $k$ times, each time using a different group as the validation set. We then average the results to get the k-fold CV estimate.
+- A method of cross validation where we randomly split the training set into $k$ groups of approximately equal size.
+- The first group is treated as the validation set and the model is fit on the remaining $k-1$ groups.
+- We repeat this process $k$ times, each time using a different group as the validation set.
+- We then average the results to get the k-fold CV estimate.
+
+<br />
 
 - If $k$ = $n$, we get LOOCV
 - If $k$ = 5 or 10, we get 5-fold or 10-fold CV (most common)
@@ -61,7 +82,7 @@ Qualititave inputs ("Yes", "No") are to be converted to quantitative inputs (1, 
 
 - p(x) = $\frac{e^{\beta_0 + \beta_1x}}{1 + e^{\beta_0 + \beta_1x}}$
 - If $\beta_0 + \beta_1x$ is non-negative, and $p(x) > 0.5$, then we predict $Y = 1$
-- else, we get p < 0.5 and predict $Y = 0$
+- else, we get $p(x) < 0.5$ and predict $Y = 0$
 - Decision boundary is the equation $\beta_0 + \beta_1x$
 
 ### Regularization
@@ -82,53 +103,57 @@ Terminology:
 
 ### Measures of Performance
 
-- Accuracy: Overall effectiveness of a classifer
+- **Accuracy**: Overall effectiveness of a classifer
   - $\frac{TP + TN}{N}$
 
 (Total no. of TP labels = TP + FN)  
 (Total no. of TN labels = TN + FP)
 
-- Sensitivity: Effectiveness of a classifer to identify positive labels
+- **Sensitivity**: Effectiveness of a classifer to identify positive labels
 
   - $\frac{TP}{TP + FN}$
 
-- Specificity: Effectiveness of a classifer to identify negative labels
+- **Specificity**: Effectiveness of a classifer to identify negative labels
 
   - $\frac{TN}{TN + FP}$
 
-- Balanced Accuracy: Average of sensitivity and specificity
+- **Balanced Accuracy**: Average of sensitivity and specificity
 
   - $\frac{sensitivity + specificity}{2}$
 
-- Prevalence: How often does the yes class occur in the data
+- **Prevalence**: How often does the yes class occur in the data
 
   - $\frac{TP + FN}{N}$
 
-- Positive Predictive Value (PPV): How often does the yes prediction occur when the model predicts yes
+- **Positive Predictive Value (PPV)**: How often does the yes prediction occur when the model predicts yes
 
   - $\frac{TP}{TP + FP}$
 
-- Negative Predictive Value (NPV): How often does the no prediction occur when the model predicts no
+- **Negative Predictive Value (NPV)**: How often does the no prediction occur when the model predicts no
 
   - $\frac{TN}{TN + FN}$
 
-- Detection Rate
+- **Detection Rate**
 
   - $\frac{TP}{N}$
 
-- Detection Prevalence
+- **Detection Prevalence**
 
   - $\frac{TP + FP}{N}$
 
-- Kappa Statistic: Compares observed accuracy with expected accuracy
+- **Kappa Statistic**: Compares observed accuracy with expected accuracy
 
   - $\frac{observed accuracy - expected accuracy}{1 - expected accuracy}$
 
-- Observed Accuracy (OA) = $\frac{a + d}{N}$
+- **Observed Accuracy (OA)** = $\frac{a + d}{N}$
 
-- Expected Accuracy (EA) = $\frac{(a + b)(a + c) + (c + d)(b + d)}{N^2}$
+- **Expected Accuracy (EA)** = $\frac{(a + b)(a + c) + (c + d)(b + d)}{N^2}$
 
-where a = TP, b = FP, c = FN, d = TN
+where,  
+a = TP  
+b = FP  
+c = FN  
+d = TN
 
 ### ROC (Receiver Operating Characteristic) Curve
 

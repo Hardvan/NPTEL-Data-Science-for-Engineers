@@ -1,3 +1,5 @@
+# Predicting Price of a restaurant based on Food, Decor, Service and Location
+
 # * 1) Loading Data
 nyc <- read.csv("nyc.csv")
 
