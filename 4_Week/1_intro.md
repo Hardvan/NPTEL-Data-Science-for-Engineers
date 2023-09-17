@@ -1,53 +1,51 @@
-# Introduction to Optimization
+# Week 4
 
-## Lecture 1
+## Lecture 1: Introduction to Optimization
 
 ### What is Optimization?
 
-An optimization problem consists of maximizing or minimizing a real function by systematically choosing input values from
-within an allowed set and computing the value of the function.
+An optimization problem consists of **maximizing** or **minimizing** a real function by systematically choosing input values from within an allowed set and computing the value of the function.
 
-### Unvariate Optimization
+### Univariate Optimization
 
 #### Conditions for Local Optimum for Univariate Optimization
 
-x\* is said to be a minimizer of the function f(x)
+x\* is said to be a **minimizer** of the function f(x)
 
-- First Order Necessary Condition: f'(x\*) = 0
-- Second Order Sufficiency Condition: f''(x\*) > 0
+- First Order Necessary Condition: $f'(x^*) = 0$
+- Second Order Sufficiency Condition: $f''(x^*) > 0$
 
-## Lecture 2
+## Lecture 2: Multivariate Optimization - Contour Plots
 
-### Multivariate Optimization - Contour Plots
+### Gradient
 
-#### Gradient
-
+- Gradient is a **vector of partial derivatives**
 - Gradient at a point is orthogonal to the contours
 - Gradient points in the direction of greatest increase of the function
 - Negative gradient points in the direction of greatest decrease of the function
-- Gradient is a vector
-- Gradient is a vector of partial derivatives
 
-#### Hessian
+![Alt text](./images/image1.png)
 
-- Hessian is a matrix of second order partial derivatives
+### Hessian
+
+- Hessian is a **matrix of second order partial derivatives**
 - Hessian is a square matrix
 - Hessian is symmetric
-- Hessian is **positive definite** if all eigenvalues of the Hessian matrix are positive (> 0)
-- Hessian is **negative definite** if all eigenvalues of the Hessian matrix are negative (< 0)
+- Hessian is **positive definite** if all **eigenvalues** of the Hessian matrix are **positive** (> 0)
+- Hessian is **negative definite** if all **eigenvalues** of the Hessian matrix are **negative** (< 0)
 
-#### Conditions for Local Optimum for Multivariate Optimization
+![Alt text](./images/image2.png)
 
-- Sufficient Condition: ∇f(x\*) = 0
-- Hessiann is positive definite (∇²f(x\*) > 0)
+### Conditions for Local Optimum for Multivariate Optimization
 
-## Lecture 3
+- Sufficient Condition: $∇f(x^*) = 0$
+- Hessian is positive definite: $∇²f(x^*) > 0$
 
-### Unconstrained Multivariate Optimization - Descent Direction & Movement
+## Lecture 3: Unconstrained Multivariate Optimization - Descent Direction & Movement
 
 Iterative: $x^{k+1} = x^k + \alpha^k d^k$
 
-where,
+where,  
 x: starting point  
 $\alpha$: step length  
 d: descent/search direction
