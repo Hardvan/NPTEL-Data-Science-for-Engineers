@@ -19,13 +19,20 @@ i.e., P(A ∪ B) = P(A) + P(B)
 
 ## Gaussian/Normal Distribution
 
-Represented as x ~ N(μ, σ²)
-where, x = random variable, μ = mean, σ² = variance
+Represented as x ~ N(μ, σ²)  
+where,  
+x = random variable  
+N = normal distribution  
+μ = mean  
+σ² = variance
 
 ## Standard Normal Distribution
 
-z ~ N(0, 1)
-where, z = random variable, μ = 0, σ² = 1
+z ~ N(0, 1)  
+where,  
+z = random variable  
+μ = 0  
+σ² = 1
 
 ## Hypotheses Testing
 
@@ -34,21 +41,21 @@ where, z = random variable, μ = 0, σ² = 1
 Default or status quo postulate that we wish to reject if the sample set provides sufficient evidence.
 Eg: η = η₀
 
-### Alternative Hypothesis (H₁)
+### Alternative Hypothesis (H₁ or Hₐ)
 
 An alternative postulate that is accepted if the null hypothesis is rejected.
 Eg: η < η₀
 
-### Two-sided and one-sided tests
+### Two-sided and One-sided tests
 
 #### Two-sided test
 
-H₀: μ = 0
+H₀: μ = 0  
 H₁: μ ≠ 0
 
 #### One-sided test
 
-H₀: μ = 0
+H₀: μ = 0  
 H₁: μ > 0
 
 ## Errors in Hypotheses Testing
@@ -56,11 +63,11 @@ H₁: μ > 0
 ### Type I Error (α)
 
 Rejecting the null hypothesis when it is true.  
-Also known as false positive.  
+Also known as **false positive**.  
 The probability of making a type I error is α, which is the level of significance you set for your hypothesis test.
 
 ### Type II Error (β)
 
 Accepting the null hypothesis when it is false.  
-Also known as false negative.  
+Also known as **false negative**.  
 The probability of making a type II error is β, which depends on the power of the test.
