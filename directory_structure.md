@@ -37,6 +37,7 @@
   - 📂 **07_Data_Visualization**
     - [Lec10_DataVisualization in R.pdf](1_Week/07_Data_Visualization/Lec10_DataVisualization%20in%20R.pdf)
     - [Lec10_Data_Visualization.R](1_Week/07_Data_Visualization/Lec10_Data_Visualization.R)
+    - [Rplots.pdf](1_Week/07_Data_Visualization/Rplots.pdf)
 - 📂 **2_Week**
   - 📂 **01_Linear_Algebra_Intro**
     - [intro.r](2_Week/01_Linear_Algebra_Intro/intro.r)
@@ -50,8 +51,45 @@
   - [1_intro.md](3_Week/1_intro.md)
 - 📂 **4_Week**
   - [1_intro.md](4_Week/1_intro.md)
+  - 📂 **images**
+    - [image1.png](4_Week/images/image1.png)
+    - [image2.png](4_Week/images/image2.png)
 - 📂 **5_Week**
   - [1_intro.md](5_Week/1_intro.md)
   - [GTPvar.csv](5_Week/GTPvar.csv)
 - 📂 **6_Week**
   - [1_intro.md](6_Week/1_intro.md)
+  - [2_simple_linear_regression_modelling.r](6_Week/2_simple_linear_regression_modelling.r)
+  - [bonds.txt](6_Week/bonds.txt)
+  - [Rplots.pdf](6_Week/Rplots.pdf)
+  - [women.csv](6_Week/women.csv)
+  - 📂 **images**
+    - [image1.png](6_Week/images/image1.png)
+- 📂 **7_Week**
+  - [1_intro.md](7_Week/1_intro.md)
+  - [2_multiple_linear_regression.r](7_Week/2_multiple_linear_regression.r)
+  - [3_logistic_regression.r](7_Week/3_logistic_regression.r)
+  - [4_iris.r](7_Week/4_iris.r)
+  - [cars.csv](7_Week/cars.csv)
+  - [crashTest_1.csv](7_Week/crashTest_1.csv)
+  - [crashTest_1_TEST.csv](7_Week/crashTest_1_TEST.csv)
+  - [iris.csv](7_Week/iris.csv)
+  - [nyc.csv](7_Week/nyc.csv)
+  - [Rplots.pdf](7_Week/Rplots.pdf)
+  - 📂 **images**
+    - [image1.png](7_Week/images/image1.png)
+  - 📂 **plots**
+    - [PetalLength_histogram.png](7_Week/plots/PetalLength_histogram.png)
+    - [PetalWidth_histogram.png](7_Week/plots/PetalWidth_histogram.png)
+    - [SepalLength_histogram.png](7_Week/plots/SepalLength_histogram.png)
+    - [SepalWidth_histogram.png](7_Week/plots/SepalWidth_histogram.png)
+- 📂 **8_Week**
+  - [1_intro.md](8_Week/1_intro.md)
+  - [2_knn.r](8_Week/2_knn.r)
+  - [3_k_means.r](8_Week/3_k_means.r)
+  - [4_assignement.r](8_Week/4_assignement.r)
+  - [Rplots.pdf](8_Week/Rplots.pdf)
+  - [serviceTestData.csv](8_Week/serviceTestData.csv)
+  - [serviceTrainData.csv](8_Week/serviceTrainData.csv)
+  - [tripDetails.csv](8_Week/tripDetails.csv)
+  - [USArrests.csv](8_Week/USArrests.csv)

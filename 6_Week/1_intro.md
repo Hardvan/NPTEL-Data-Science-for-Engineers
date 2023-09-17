@@ -7,48 +7,51 @@
 - Measure of the linear relationship between two variables.
 - Correlation does not imply causation.
 
-#### Pearson Correlation Coefficient
+1. #### Pearson Correlation Coefficient
 
-- Measures the linear relationship between two variables.
-- Ranges from -1 to 1.
-- 0 means no linear relationship.
+   - Measures the **linear relationship** between two variables.
+   - Ranges from -1 to 1.
+   - 0 means no linear relationship.
 
-Formula: $\rho_{X,Y} = \frac{cov(X,Y)}{\sigma_X \sigma_Y}$
+   Formula: $\rho_{X,Y} = \frac{cov(X,Y)}{\sigma_X \sigma_Y}$
 
-#### Spearman Correlation Coefficient
+2. #### Spearman Correlation Coefficient
 
-- Measures the monotonic relationship between two variables.
-- Ranges from -1 (monotonically decreasing) to 1 (monotonically increasing).
-- 0 means no monotonic relationship.
+   - Measures the **monotonic relationship** between two variables.
+   - Ranges from -1 (monotonically decreasing) to 1 (monotonically increasing).
+   - 0 means no monotonic relationship.
 
-Formula: $1 - \frac{6 \sum d_i^2}{n(n^2 - 1)}$
+   Formula: $1 - \frac{6 \sum d_i^2}{n(n^2 - 1)}$
 
-where, $d_i$ is the difference between the ranks of the two variables for each observation.
+   where,  
+   $d_i$ is the difference between the ranks of the two variables for each observation.
 
-#### Kendall Rank Correlation Coefficient
+3. #### Kendall Rank Correlation Coefficient
 
-- Correlation Coefficient to measure association between two ordinal variables.
+   - Correlation Coefficient to measure **association between two ordinal variables**.
 
-Concordant Pair: A pair of observations ($x_i$, $y_i$) and ($x_j$, $y_j$) such that $x_i < x_j$ and $y_i < y_j$ or $x_i > x_j$ and $y_i > y_j$.
+   **Concordant Pair**: A pair of observations ($x_i$, $y_i$) and ($x_j$, $y_j$) such that $x_i < x_j$ and $y_i < y_j$ or $x_i > x_j$ and $y_i > y_j$.
 
-Discordant Pair: A pair of observations ($x_i$, $y_i$) and ($x_j$, $y_j$) such that $x_i < x_j$ and $y_i > y_j$ or $x_i > x_j$ and $y_i < y_j$.
+   **Discordant Pair**: A pair of observations ($x_i$, $y_i$) and ($x_j$, $y_j$) such that $x_i < x_j$ and $y_i > y_j$ or $x_i > x_j$ and $y_i < y_j$.
 
-Formula: $\tau = \frac{C - D}{\frac{1}{2}n(n-1)}$
+   Formula: $\tau = \frac{C - D}{\frac{1}{2}n(n-1)}$
 
-where, $C$ is the number of concordant pairs and $D$ is the number of discordant pairs.
+   where,  
+   $C$ = no. of concordant pairs  
+   $D$ = no. of discordant pairs
 
-The pair for which $x_i = x_j$ and $y_i = y_j$ are not considered.
+   The pair for which $x_i = x_j$ and $y_i = y_j$ are not considered.
 
 ## Lecture 2: Linear Regression
 
 ### Regression Basics
 
-- Dependent Variable: The variable we are trying to predict.
-- Independent Variable: The variable we are using to predict the dependent variable.
+- **Dependent Variable**: The variable we are trying to predict.
+- **Independent Variable**: The variable we are using to predict the dependent variable.
 
 ### Ordinary Least Squares (OLS)
 
-- Minimizes the sum of squared errors.
+- Minimizes the **sum of squared errors**.
 - The line that minimizes the sum of squared errors is the line that minimizes the distance between the line and the data points.
 
 ## Lecture 3: Model Assessment
@@ -57,11 +60,12 @@ The pair for which $x_i = x_j$ and $y_i = y_j$ are not considered.
 
 ### Residual Plots
 
-- Residuals are the difference between the observed value and the predicted value.
+- Residuals are the **difference** between the **observed value** and the **predicted value**.
 - Used for assessing
   - Validity of linear model
   - Normality of the errors
   - Homoscedatic v/s Heteroscedatic errors
+  - ![Alt text](./images/image1.png)
 
 ### Normal Q-Q Plot
 
@@ -79,6 +83,6 @@ See the code [simple_linear_regression_modelling.r](./2_simple_linear_regression
 
 ## Lecture 6: Simple Linear Regression Model Assessment
 
-See the code [simple_linear_regression_model_assessment.r](./2_simple_linear_regression_model_assessment.r)
+See the code [simple_linear_regression_modelling.r](./2_simple_linear_regression_modelling.r)
 
 ## Lecture 7: Multiple Linear Regression

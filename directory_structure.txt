@@ -35,6 +35,7 @@
 	📂 07_Data_Visualization
 	  - Lec10_DataVisualization in R.pdf
 	  - Lec10_Data_Visualization.R
+	  - Rplots.pdf
 📂 2_Week
 	📂 01_Linear_Algebra_Intro
 	  - intro.r
@@ -48,8 +49,45 @@
   - 1_intro.md
 📂 4_Week
   - 1_intro.md
+	📂 images
+	  - image1.png
+	  - image2.png
 📂 5_Week
   - 1_intro.md
   - GTPvar.csv
 📂 6_Week
   - 1_intro.md
+  - 2_simple_linear_regression_modelling.r
+  - bonds.txt
+  - Rplots.pdf
+  - women.csv
+	📂 images
+	  - image1.png
+📂 7_Week
+  - 1_intro.md
+  - 2_multiple_linear_regression.r
+  - 3_logistic_regression.r
+  - 4_iris.r
+  - cars.csv
+  - crashTest_1.csv
+  - crashTest_1_TEST.csv
+  - iris.csv
+  - nyc.csv
+  - Rplots.pdf
+	📂 images
+	  - image1.png
+	📂 plots
+	  - PetalLength_histogram.png
+	  - PetalWidth_histogram.png
+	  - SepalLength_histogram.png
+	  - SepalWidth_histogram.png
+📂 8_Week
+  - 1_intro.md
+  - 2_knn.r
+  - 3_k_means.r
+  - 4_assignement.r
+  - Rplots.pdf
+  - serviceTestData.csv
+  - serviceTrainData.csv
+  - tripDetails.csv
+  - USArrests.csv

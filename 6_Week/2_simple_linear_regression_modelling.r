@@ -1,5 +1,6 @@
 # cd to the directory where this file is located and then run the code
 
+# ? Predicting the bid price of a bond using its coupon rate
 
 # * 1) Loading data
 # dataset 'bonds' is given in ".txt" format
@@ -50,7 +51,7 @@ summary(model_bonds)
 
 # First level model assessment
 # Test on β̂ 1 is a two-sided test
-# At α = 0.05 (95% confidence level) (confidence level = 1- significance level.)
+# At α = 0.05 (95% confidence level) (confidence level = 1 - significance level)
 print("First level model assessment:")
 alpha <- 0.05
 n <- nrow(bonds)
