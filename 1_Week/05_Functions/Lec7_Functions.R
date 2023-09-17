@@ -8,7 +8,7 @@ volume_cylinder <- function(radius = 1, height = 1) {
     return(vol)
 }
 
-print(volume_cylinder(2, 3))
+print(volume_cylinder(2, 3)) # 37.69911
 
 # * Lazy Evaluation of Functions in R
 # Functions are lazily evaluated,
@@ -24,8 +24,8 @@ print(volume_cylinder(2, 3))
 volume_cylinder2 <- function(radius = 1, height = 1) {
     vol <- pi * radius^2 * height
     diameter <- 2 * radius
-    result <- list("volume" = vol, "diameter" = diameter)
 
+    result <- list("volume" = vol, "diameter" = diameter)
     return(result)
 }
 
@@ -47,8 +47,8 @@ print(func(2))
 A <- matrix(1:9, 3, 3)
 print(A)
 
-print(apply(A, 1, sum)) # row-wise sum
-print(apply(A, 2, sum)) # column-wise sum
+print(apply(A, 1, sum)) # row - wise sum
+print(apply(A, 2, sum)) # column - wise sum
 
 # * lapply() function
 # Applies a function over a list.

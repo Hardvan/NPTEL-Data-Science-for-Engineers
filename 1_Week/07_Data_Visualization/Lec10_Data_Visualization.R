@@ -1,4 +1,5 @@
 # ? Scatter Plot
+# using plot() function
 X <- 1:10
 Y <- X^2
 plot(Y)
@@ -26,13 +27,17 @@ barplot(H,
     main = "Monthly Revenue"
 )
 
+# Load the 'tips' dataset
+library(reshape2)
+data("tips")
+
 # ? Multiple Plots in a Single Figure
 par(mfrow = c(2, 4)) # 2 rows, 4 columns
 days <- c("Thur", "Fri", "Sat", "Sun")
 sexes <- unique(tips$sex)
 
 for (i in 1:length(sexes)) {
-    for (j in 1:length(dats)) {
+    for (j in 1:length(days)) {
         currdata <- tips[tips$day == days[j] & tips$sex == sexes[i], ]
         plot(currdata$total_bill, currdata$tip / currdata$total_bill,
             main = paste(days[j], sexes[i], sep = ","), ylim = c(0, 0.7), las = 1

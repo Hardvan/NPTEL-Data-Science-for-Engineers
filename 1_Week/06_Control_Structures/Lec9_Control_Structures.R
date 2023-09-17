@@ -33,9 +33,9 @@ if (x > 0) {
 # seq(from, to, by, length)
 # Creates equi-spaced points between from and to
 
-print(seq(1, 10, 2))
-print(seq(1, 10, length = 5))
-print(seq(1, 10, by = 4))
+print(seq(1, 10, 2)) # 1 3 5 7 9
+print(seq(1, 10, length = 5)) # 1.00 3.25 5.5 7.75 10.00
+print(seq(1, 10, by = 4)) # 1 5 9
 
 # for loop construct
 # for (variable in sequence) {

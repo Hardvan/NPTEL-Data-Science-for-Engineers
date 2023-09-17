@@ -34,7 +34,7 @@
 
 # Convert object to a particular data type -> as.data.type(object) -> as.numeric(1.5)
 
-# Note : Not all coercions are possible and if attempted will return “NA” as output
+# Note : Not all coercions are possible and if attempted will return "NA" as output
 
 typeof(1) # double
 typeof("Hello") # character
@@ -43,7 +43,7 @@ is.character("Hello") # TRUE
 is.character((as.Date("2019-01-01"))) # FALSE
 
 as.complex(1) # 1+0i
-# as.numeric("Hello") # NA
+as.numeric("Hello") # NA
 
 # ? Basic objects
 # Object            |       Description
@@ -61,7 +61,7 @@ id <- c(1, 2, 3, 4)
 emp.name <- c("John", "Jim", "Jack", "Jill")
 num.emp <- 4
 
-emp.list <- list(id, emp.name, num.emp)
+emp.list <- list(id, emp.name, num.emp) # list() is used to create a list
 print(emp.list)
 
 # Accessing components of a list
@@ -70,7 +70,7 @@ emp.list <- list("ID" = id, "Names" = emp.name, "Total Staff" = num.emp)
 print(emp.list$Names)
 
 # by index
-# To access top level components, use double slicing operator “ [[ ]]”
+# To access top level components, use double slicing operator “[[ ]]”
 # For lower/inner level components use “[ ]” along with “[[ ]]”
 print("In index")
 print(emp.list[[1]]) # 1,2,3,4

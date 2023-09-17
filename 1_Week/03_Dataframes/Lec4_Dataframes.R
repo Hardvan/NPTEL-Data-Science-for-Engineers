@@ -27,7 +27,7 @@ print(df)
 print("Accessing 1st & 2nd row")
 print(df[1:2, ])
 
-# Accessing 1st & 2rnd column
+# Accessing 1st & 2nd column
 print("Accessing 1st & 2nd column")
 print(df[, 1:2])
 # OR

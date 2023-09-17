@@ -1,6 +1,6 @@
 a <- 11
 b <- a * 10
-print(c(a, b)) # c is used to concatenate
+print(c(a, b)) # c is used to concatenate (Output: 11 110)
 
 # Run is used to execute selected lines
 # Source/Source with echo is for a whole file

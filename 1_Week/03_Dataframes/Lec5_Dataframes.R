@@ -25,7 +25,7 @@ print(Df2)
 # Recasting in one step
 print("Recasting in one step")
 Df3 <- recast(pd,
-    variable + Month ~ Name,
+    variable + Month ~ Name, # Means variable and month to remain as is, Cast "Name" as columns
     id.var = c("Name", "Month")
 )
 print(Df3)

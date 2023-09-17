@@ -11,7 +11,7 @@
 # Creating a matrix
 
 # Empty matrix
-A <- matrix()
+A <- matrix() # matrix() function
 print(A)
 
 # Filled by column (default)
@@ -22,7 +22,7 @@ print(A)
 A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9),
     nrow = 3,
     ncol = 3,
-    byrow = TRUE
+    byrow = TRUE # byrow = FALSE is default
 )
 print(A)
 
@@ -44,14 +44,14 @@ print(A)
 # dim(A) will return the dimension of the matrix
 print(dim(A))
 
-# nrow(A) will return the number of rows in the matrix
+# nrow(A) will return the no. of rows in the matrix
 print(nrow(A))
 
-# ncol(A) will return the number of columns in the matrix
+# ncol(A) will return the no. of columns in the matrix
 print(ncol(A))
 
 # prod(dim(A)) OR length(A)
-# will return the number of elements in the matrix
+# will return the no. of elements in the matrix
 print(prod(dim(A)))
 print(length(A))
 
@@ -73,7 +73,9 @@ print(A[, -2])
 print(A[, -c(1, 3)])
 
 # Practice
+print("Practice")
 A <- matrix(c(1, 7, 3, 4, 4, 6, 4, 7, 12), nrow = 3, ncol = 3, byrow = TRUE)
+print(A)
 
 # Change the element 12 to 13
 A[3, 3] <- 13
@@ -98,20 +100,22 @@ print(A[1:3, 1:2])
 print(A[1:2, c(1, 3)])
 
 # Matrix concatenation
-# rbind() will concatenate matrices by row if they have same number of columns
-# cbind() will concatenate matrices by column if they have same number of rows
+# rbind() will concatenate matrices by row if they have same no. of columns
+# cbind() will concatenate matrices by column if they have same no. of rows
 
 # 3x3
 A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3, byrow = TRUE)
 # 1x3
 B <- matrix(c(10, 11, 12), nrow = 1, ncol = 3, byrow = TRUE)
 
+print("rbind")
 C <- rbind(A, B)
 print(C)
 
 # 3x1
 B <- matrix(c(10, 11, 12), nrow = 3, ncol = 1, byrow = TRUE)
 
+print("cbind")
 C <- cbind(A, B)
 print(C)
 
