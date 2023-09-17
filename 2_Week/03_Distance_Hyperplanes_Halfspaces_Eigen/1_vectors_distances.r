@@ -8,7 +8,7 @@ print(dist)
 
 # * Orthogonal vectors
 # Vectors whose dot product is zero
-# A'B = 0
+# AᵀB = 0
 print("Orthogonal vectors")
 v1 <- c(1, -2, 4)
 v2 <- c(2, 5, 2)
