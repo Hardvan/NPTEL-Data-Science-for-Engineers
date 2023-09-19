@@ -21,7 +21,9 @@ $SSR$ = Sum of Squares Regression
 $SSE$ = Sum of Squares Error  
 $SST$ = Sum of Squares Total  
 $SST = SSR + SSE$  
-$R²$ = Coefficient of Determination
+$R²$ = Coefficient of Determination  
+<br />
+Sum of squares error (SSE) is also known as the residual sum of squares (RSS), but some individuals denote it as SSR, which is also the abbreviation for the sum of squares due to regression.
 
 ## Adjusted R²
 
