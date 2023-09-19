@@ -30,7 +30,7 @@ Sum of squares error (SSE) is also known as the residual sum of squares (RSS), b
 $R²_{adj} = 1 - \frac{SSE/(n-p-1)}{SST/(n-1)}$
 
 where,
-$n$ = no. of observations
+$n$ = no. of observations  
 $p$ = no. of independent variables  
 $R²_{adj}$ = Adjusted Coefficient of Determination
 
