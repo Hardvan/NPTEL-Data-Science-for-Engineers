@@ -6,7 +6,9 @@
   - directory_structure.md
   - directory_structure.txt
   - DirecTracer.py
+  - ImporantPoints.md
   - README.md
+  - trial.md
 📂 1_Week
 	📂 00_Setup_Guide
 	  - R Setup Guide.pdf

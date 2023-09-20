@@ -8,7 +8,9 @@
   - [directory_structure.md](./directory_structure.md)
   - [directory_structure.txt](./directory_structure.txt)
   - [DirecTracer.py](./DirecTracer.py)
+  - [ImporantPoints.md](./ImporantPoints.md)
   - [README.md](./README.md)
+  - [trial.md](./trial.md)
 - 📂 **1_Week**
   - 📂 **00_Setup_Guide**
     - [R Setup Guide.pdf](1_Week/00_Setup_Guide/R%20Setup%20Guide.pdf)
