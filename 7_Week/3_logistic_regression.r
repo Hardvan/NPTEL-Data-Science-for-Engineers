@@ -42,7 +42,10 @@ tapply(logis_train, crashTest_1$CarType, mean)
 
 # * 4) Predicting on Test Data
 
-logis_pred <- predict(logis_fit, newdata = crashTest_1_test, type = "response")
+logis_pred <- predict(logis_fit,
+    newdata = crashTest_1_test,
+    type = "response"
+)
 plot(logis_pred)
 
 # Results

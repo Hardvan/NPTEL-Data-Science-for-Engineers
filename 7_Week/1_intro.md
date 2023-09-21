@@ -83,7 +83,7 @@ Qualititave inputs ("Yes", "No") are to be converted to quantitative inputs (1, 
 - p(x) = $\frac{e^{\beta_0 + \beta_1x}}{1 + e^{\beta_0 + \beta_1x}}$
 - If $\beta_0 + \beta_1x$ is non-negative, and $p(x) > 0.5$, then we predict $Y = 1$
 - else, we get $p(x) < 0.5$ and predict $Y = 0$
-- Decision boundary is the equation $\beta_0 + \beta_1x$
+- Decision boundary is the equation: $\beta_0 + \beta_1x$
 
 ### Regularization
 
@@ -100,20 +100,20 @@ Terminology:
 - FP: False Positive (Type I Error)
 - FN: False Negative (Type II Error)
 - N = TP + TN + FP + FN (Total no. of observations)
+- Total no. of TP labels = TP + FN
+- Total no. of TN labels = TN + FP
 
 ### Measures of Performance
 
 - **Accuracy**: Overall effectiveness of a classifer
+
   - $\frac{TP + TN}{N}$
 
-(Total no. of TP labels = TP + FN)  
-(Total no. of TN labels = TN + FP)
-
-- **Precision**: Effectiveness of a classifer to identify positive labels
+- **Precision**: Ratio of true positives to all positive predictions
 
   - $\frac{TP}{TP + FP}$
 
-- **Recall**
+- **Recall**: Ratio of true positives to all positive labels
 
   - $\frac{TP}{TP + FN}$
 
