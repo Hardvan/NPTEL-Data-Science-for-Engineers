@@ -47,8 +47,8 @@ print(func(2))
 A <- matrix(1:9, 3, 3)
 print(A)
 
-print(apply(A, 1, sum)) # row - wise sum
-print(apply(A, 2, sum)) # column - wise sum
+print(apply(A, 1, sum)) # row-wise sum
+print(apply(A, 2, sum)) # column-wise sum
 
 # * lapply() function
 # Applies a function over a list.

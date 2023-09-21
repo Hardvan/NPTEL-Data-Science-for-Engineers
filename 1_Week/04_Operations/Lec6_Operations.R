@@ -15,7 +15,7 @@ A <- matrix() # matrix() function
 print(A)
 
 # Filled by column (default)
-A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9))
+A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9)) # 9x1 matrix
 print(A)
 
 # 3x3 matrix filled by row
@@ -90,7 +90,7 @@ print(A[3, ])
 # Colon operator
 # 1:10 will return a vector of numbers from 1 to 10
 # 1:2:10 will return a vector of numbers from 1 to 10 with a step of 2
-# 10:2 will return a vector of numbers from 10 to 2
+# 10:1 will return a vector of numbers from 10 to 1
 print(1:10)
 print(10:1)
 

@@ -50,6 +50,10 @@ for (i in seq(1, n)) { # OR for (i in 1:n)
 
     print(c(i, sum))
 
+    if (i == 2) {
+        next # like continue in C
+    }
+
     if (i == 3) {
         break
     }
