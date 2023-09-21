@@ -51,7 +51,7 @@
 
 ### Ordinary Least Squares (OLS)
 
-- Minimizes the **sum of squared errors**.
+- Minimizes the **sum of squared errors (SSE)**.
 - The line that minimizes the sum of squared errors is the line that minimizes the distance between the line and the data points.
 
 ## Lecture 3: Model Assessment
@@ -87,17 +87,17 @@ See the code [simple_linear_regression_modelling.r](./2_simple_linear_regression
 
 ## Lecture 7: Multiple Linear Regression
 
-1. Sum of Squares Total (SST) – The sum of squared differences between individual data points (yi) and the mean of the response variable (y).
+1. Sum of Squares Total (SST) – The sum of squared differences between **individual data points** (yi) and the **mean** of the response variable ($\bar{y}$).
 
-   $SST = Σ(yi – y)^2$
+   $SST = Σ(y_i – \bar{y})^2$
 
-2. Sum of Squares Regression (SSR) – The sum of squared differences between predicted data points (ŷi) and the mean of the response variable(y).
+2. Sum of Squares Regression (SSR) – The sum of squared differences between **predicted data points** (ŷi) and the **mean** of the response variable ($\bar{y}$).
 
-   $SSR = Σ(ŷi – y)^2$
+   $SSR = Σ(ŷ_i – \bar{y})^2$
 
-3. Sum of Squares Error (SSE) – The sum of squared differences between predicted data points (ŷi) and observed data points (yi).
+3. Sum of Squares Error (SSE) – The sum of squared differences between **observed data points** ($y_i$) and **predicted data points** ($ŷ_i$).
 
-   $SSE = Σ(ŷi – yi)^2$
+   $SSE = Σ(y_i – ŷ_i)^2$
 
 ## Formula For R²
 
@@ -112,10 +112,10 @@ $R²$ = Coefficient of Determination
 
 ## Adjusted R²
 
-$R²_{adj} = 1 - \frac{SSE/(n-p-1)}{SST/(n-1)}$
+$R²_{adj} = 1 - \frac{(1 - R²)(n - 1)}{n - p - 1}$
 
-where,
-$n$ = no. of observations
+where,  
+$n$ = no. of observations  
 $p$ = no. of independent variables  
 $R²_{adj}$ = Adjusted Coefficient of Determination
 

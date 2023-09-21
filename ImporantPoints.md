@@ -1,16 +1,16 @@
 # Important Points
 
-1. Sum of Squares Total (SST) – The sum of squared differences between individual data points (yi) and the mean of the response variable (y).
+1. Sum of Squares Total (SST) – The sum of squared differences between **individual data points** (yi) and the **mean** of the response variable ($\bar{y}$).
 
-   $SST = Σ(yi – y)^2$
+   $SST = Σ(y_i – \bar{y})^2$
 
-2. Sum of Squares Regression (SSR) – The sum of squared differences between predicted data points (ŷi) and the mean of the response variable(y).
+2. Sum of Squares Regression (SSR) – The sum of squared differences between **predicted data points** (ŷi) and the **mean** of the response variable ($\bar{y}$).
 
-   $SSR = Σ(ŷi – y)^2$
+   $SSR = Σ(ŷ_i – \bar{y})^2$
 
-3. Sum of Squares Error (SSE) – The sum of squared differences between predicted data points (ŷi) and observed data points (yi).
+3. Sum of Squares Error (SSE) – The sum of squared differences between **observed data points** ($y_i$) and **predicted data points** ($ŷ_i$).
 
-   $SSE = Σ(ŷi – yi)^2$
+   $SSE = Σ(y_i – ŷ_i)^2$
 
 ## Formula For R²
 
@@ -53,3 +53,11 @@ $β_0 = \bar{y} - β_1\bar{x}$
 where,  
 $\bar{x}$ = Mean of $x$  
 $\bar{y}$ = Mean of $y$
+
+## F-Statistic
+
+$F = \frac{SSR/p}{SSE/(n-p-1)}$
+
+where,  
+n = no. of observations  
+p = no. of independent variables

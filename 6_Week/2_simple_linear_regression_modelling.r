@@ -62,7 +62,7 @@ print("SSE:")
 SSE <- sum(model_bonds$residuals^2)
 print(SSE)
 
-print("SST:")
+print("SSR:")
 SSR <- sum((model_bonds$fitted.values - mean(bonds$BidPrice))^2)
 print(SSR)
 
