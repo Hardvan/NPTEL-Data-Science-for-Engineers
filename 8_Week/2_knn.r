@@ -28,7 +28,7 @@ summary(service_test)
 predicted_knn <- knn(
     train = service_train[, -6],
     test = service_test[, -6],
-    cl = service_train$Service,
+    cl = service_train$Service, # Class
     k = 3
 )
 print(predicted_knn)

@@ -44,8 +44,8 @@ Can be both **quantitative** and **qualitative**
 
 ### Things to consider
 
-- Parameter selection (k)
-  - The best choice of k depends on the data
+- Parameter selection (k)  
+  The best choice of k depends on the data
   - Larger values of k **reduce** the effect of **noise** on classification, but make **boundaries** between classes **less distinct**
   - Small values of k make classification **boundaries more specific**, but noise in the data is more likely to cause **misclassification**
 - Prescence of noise
@@ -85,8 +85,11 @@ where $\mu_i$ is the mean of points in $S_i$.
 ### Determining no. of clusters (K)
 
 - **Elbow method**
+
   - looks at percentage of variance explained as a function of no. of clusters (K)
   - The point where marginal decrease plateaus is an indicator of the optimal no. of clusters
+
+- **Dendogram**
 
 ### Disadvantages of K-means clustering
 

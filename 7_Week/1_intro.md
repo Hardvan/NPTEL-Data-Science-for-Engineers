@@ -161,6 +161,8 @@ Terminology:
 
 - **Expected Accuracy (EA)** = $\frac{(a + b)(a + c) + (c + d)(b + d)}{N^2}$
 
+- **Misclassification Rate** = $\frac{FP + FN}{N}$
+
 where,  
 a = TP  
 b = FP  
