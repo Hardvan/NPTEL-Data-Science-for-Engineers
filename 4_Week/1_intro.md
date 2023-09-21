@@ -43,11 +43,11 @@ x\* is said to be a **minimizer** of the function f(x)
 
 ## Lecture 3: Unconstrained Multivariate Optimization - Descent Direction & Movement
 
-Iterative: $x^{k+1} = x^k + \alpha^k d^k$
+Iterative: $x^{k+1} = x^k + \alpha^k s^k$
 
 where,  
 x: starting point  
-$\alpha$: step length  
-d: descent/search direction
+$\alpha$: step length (learning rate)  
+s: $-∇f(x)$
 
 Also called as **Learning Rule** in Machine Learning
