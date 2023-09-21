@@ -10,12 +10,15 @@ Many possible outcomes for the same experimental conditions (Eg: coin toss).
 
 ## Independent Events
 
-P(A ∩ B) = P(A) \* P(B)
+P(A ∩ B) = P(A) \* P(B)  
+So,  
+P(A ∪ B) = P(A) + P(B) - P(A) \* P(B)
 
 ## Mutually Exclusive Events
 
-P(A ∩ B) = 0
-i.e., P(A ∪ B) = P(A) + P(B)
+P(A ∩ B) = 0  
+So,  
+P(A ∪ B) = P(A) + P(B)
 
 ## Gaussian/Normal Distribution
 
