@@ -2,6 +2,14 @@
 
 ## Lecture 1: Multivariate Optimization with Equality Constraints
 
+### Lagrange Multiplier
+
+$∇f(x) = - λ ∇g(x)$
+
+where,  
+$f(x)$ = objective function  
+$g(x)$ = constraint function
+
 ## Lecture 2: Multivariate Optimization with Inequality Constraints
 
 ## Lecture 3: Introduction to Data Science
