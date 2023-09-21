@@ -46,7 +46,7 @@ print("new subset pd2")
 print(pd2)
 
 # Editing dataframes
-df[[2]][2] <- "Python"
+df[[2]][2] <- "Python" # OR df[2, 2] <- "Python"
 print("df after editing")
 print(df)
 

@@ -109,6 +109,18 @@ Terminology:
 (Total no. of TP labels = TP + FN)  
 (Total no. of TN labels = TN + FP)
 
+- **Precision**: Effectiveness of a classifer to identify positive labels
+
+  - $\frac{TP}{TP + FP}$
+
+- **Recall**
+
+  - $\frac{TP}{TP + FN}$
+
+- **F1 Score**
+
+  - $\frac{2 * precision * recall}{precision + recall}$
+
 - **Sensitivity**: Effectiveness of a classifer to identify positive labels
 
   - $\frac{TP}{TP + FN}$
