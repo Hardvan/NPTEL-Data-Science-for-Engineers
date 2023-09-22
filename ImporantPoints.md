@@ -27,7 +27,7 @@ Sum of squares error (SSE) is also known as the residual sum of squares (RSS), b
 
 ## Adjusted R²
 
-$R²_{adj} = 1 - \frac{(1 - R²)(n - 1)}{n - p - 1}$
+$R²_{adj} = 1 - \frac{(1 - R²)(n - 1)}{n - p - 1}$ = $1 - \frac{SSE(n - 1)}{SST(n - p - 1)}$
 
 where,  
 $n$ = no. of observations  
