@@ -17,7 +17,7 @@ print(volume_cylinder(2, 3)) # 37.69911
 # as long as the execution doesn’t involve these arguments.
 
 # Functions in R take multiple input objects but returns only one
-# object as output
+# object as output.
 # This however is not a limitation, because a list object (collection
 # of several objects) can be returned by function
 

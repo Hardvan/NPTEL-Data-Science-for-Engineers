@@ -26,7 +26,7 @@ summary(service_test)
 
 # * 3) Implementing KNN
 predicted_knn <- knn(
-    train = service_train[, -6],
+    train = service_train[, -6], # -6 to remove "Service" column
     test = service_test[, -6],
     cl = service_train$Service, # Class
     k = 3
@@ -42,7 +42,10 @@ conf_matrix <- confusionMatrix(
 print(conf_matrix)
 
 # OR
-conf_matrix <- table(predicted_knn, service_test$Service)
+conf_matrix <- table(
+    predicted_knn,
+    service_test$Service
+)
 print(conf_matrix)
 
 # Accuracy

@@ -21,7 +21,7 @@ print("Eigen values and vectors")
 A <- matrix(c(8, 7, 2, 3), 2, 2, byrow = TRUE)
 print(A)
 
-ev <- eigen(A)
+ev <- eigen(A) # Returns a list of eigen values and eigen vectors
 print(ev)
 print(ev$values)
 print(ev$vectors)

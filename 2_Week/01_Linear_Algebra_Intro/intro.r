@@ -14,7 +14,10 @@ print(A)
 library(pracma) # For Rank() function
 
 print("Rank Example")
-A <- matrix(c(1, 2, 3, 2, 4, 6, 1, 0, 0), ncol = 3, byrow = F)
+A <- matrix(c(1, 2, 3, 2, 4, 6, 1, 0, 0),
+    ncol = 3,
+    byrow = F
+)
 print(A)
 print(Rank(A))
 
@@ -30,7 +33,7 @@ print(Rank(A))
 # Rank(A) + Nullity(A) = No. of columns of A
 # where,
 # Rank(A) = No. of independent variables
-# Nullity(A) = No. of eqns
+# Nullity(A) = No. of eqns among the variables
 # No. of columns of A = Total no. of variables
 
 # Example
@@ -51,7 +54,10 @@ print(paste("Nullity: ", nullity)) # 0
 
 # Another example
 print("Rank Nullity Theorem Example 2")
-A <- matrix(c(1, 2, 3, 2, 4, 6, 0, 0, 1), ncol = 3, byrow = F)
+A <- matrix(c(1, 2, 3, 2, 4, 6, 0, 0, 1),
+    ncol = 3,
+    byrow = F
+)
 print(A)
 
 columns <- ncol(A) # No. of columns

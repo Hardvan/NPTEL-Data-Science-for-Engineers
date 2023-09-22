@@ -26,18 +26,18 @@ print(x)
 # x = (A^+)b
 # Singular Value Decomposition (SVD) is used to compute the pseudo-inverse or generalized inverse (A^+)
 
+library(MASS) # For ginv() function
+
 # Revisiting Examples
 print("Revisiting Examples")
 print("Case 2 Example")
 A <- matrix(c(1, 2, 3, 0, 0, 1), ncol = 2, byrow = F)
 b <- matrix(c(1, 2, 5), ncol = 1, byrow = F)
-library(MASS)
 x <- ginv(A) %*% b
 print(x)
 
 print("Case 3 Example")
 A <- matrix(c(1, 2, 3, 0, 0, 1), ncol = 3, byrow = T)
 b <- matrix(c(2, 1), ncol = 1, byrow = F)
-library(MASS)
 x <- ginv(A) %*% b
 print(x)

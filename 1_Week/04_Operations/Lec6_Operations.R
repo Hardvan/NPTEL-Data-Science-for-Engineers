@@ -56,7 +56,11 @@ print(prod(dim(A)))
 print(length(A))
 
 # Changing column names
-A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3, byrow = TRUE)
+A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9),
+    nrow = 3,
+    ncol = 3,
+    byrow = TRUE
+)
 colnames(A) <- c("A", "B", "C")
 rownames(A) <- c("X", "Y", "Z")
 print(A)
@@ -95,7 +99,11 @@ print(1:10)
 print(10:1)
 
 # Sub matrix selection
-A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3, byrow = TRUE)
+A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9),
+    nrow = 3,
+    ncol = 3,
+    byrow = TRUE
+)
 print(A[1:3, 1:2])
 print(A[1:2, c(1, 3)])
 

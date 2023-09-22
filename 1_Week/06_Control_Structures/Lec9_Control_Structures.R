@@ -47,13 +47,11 @@ sum <- 0
 print("i sum")
 for (i in seq(1, n)) { # OR for (i in 1:n)
     sum <- sum + i
-
     print(c(i, sum))
 
     if (i == 2) {
         next # like continue in C
     }
-
     if (i == 3) {
         break
     }
@@ -70,7 +68,6 @@ i <- 1
 print("i sum")
 while (i <= n) {
     sum <- sum + i
-
     print(c(i, sum))
 
     i <- i + 1

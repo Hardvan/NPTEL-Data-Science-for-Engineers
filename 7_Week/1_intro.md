@@ -39,7 +39,7 @@
 
 ### k-Fold Cross Validation
 
-- A method of cross validation where we randomly split the training set into $k$ groups of approximately equal size.
+- A method of cross validation where we randomly split the training set into **$k$ groups** of approximately equal size.
 - The first group is treated as the validation set and the model is fit on the remaining $k-1$ groups.
 - We repeat this process $k$ times, each time using a different group as the validation set.
 - We then average the results to get the k-fold CV estimate.
@@ -80,7 +80,7 @@ Qualititave inputs ("Yes", "No") are to be converted to quantitative inputs (1, 
 
 ### Logit Model
 
-- p(x) = $\frac{e^{\beta_0 + \beta_1x}}{1 + e^{\beta_0 + \beta_1x}}$
+- p(x) = $\frac{1}{1 + e^{-(\beta_0 + \beta_1x)}}$
 - If $\beta_0 + \beta_1x$ is non-negative, and $p(x) > 0.5$, then we predict $Y = 1$
 - else, we get $p(x) < 0.5$ and predict $Y = 0$
 - Decision boundary is the equation: $\beta_0 + \beta_1x$

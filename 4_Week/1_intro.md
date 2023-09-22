@@ -12,8 +12,13 @@ An optimization problem consists of **maximizing** or **minimizing** a real func
 
 x\* is said to be a **minimizer** of the function f(x)
 
-- First Order Necessary Condition: $f'(x^*) = 0$
-- Second Order Sufficiency Condition: $f''(x^*) > 0$
+- First Order Necessary Condition:
+
+  $f'(x^*) = 0$
+
+- Second Order Sufficiency Condition
+
+  $f''(x^*) > 0$
 
 ## Lecture 2: Multivariate Optimization - Contour Plots
 
@@ -38,8 +43,13 @@ x\* is said to be a **minimizer** of the function f(x)
 
 ### Conditions for Local Optimum for Multivariate Optimization
 
-- Sufficient Condition: $∇f(x^*) = 0$
-- Hessian is positive definite: $∇²f(x^*) > 0$
+- Sufficient Condition:
+
+  $∇f(x^*) = 0$
+
+- Hessian is positive definite:
+
+  $∇²f(x^*) > 0$
 
 ## Lecture 3: Unconstrained Multivariate Optimization - Descent Direction & Movement
 

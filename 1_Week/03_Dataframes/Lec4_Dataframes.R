@@ -77,10 +77,10 @@ print(df2)
 
 # Condidtional deletion
 print("Conditional deletion")
-df3 <- df[, !names(df) %in% c("vec3")]
+df3 <- df[, !names(df) %in% c("vec3")] # deletes column vec3
 print(df3)
 
-df4 <- df[!df$vec1 == 3, ]
+df4 <- df[!df$vec1 == 3, ] # deletes row with vec1 = 3
 print(df4)
 
 # Factor issue

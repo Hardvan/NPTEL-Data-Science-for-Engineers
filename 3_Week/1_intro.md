@@ -10,19 +10,20 @@ Many possible outcomes for the same experimental conditions (Eg: coin toss).
 
 ## Independent Events
 
-P(A ∩ B) = P(A) \* P(B)  
+$P(A ∩ B) = P(A) * P(B)$  
 So,  
-P(A ∪ B) = P(A) + P(B) - P(A) \* P(B)
+$P(A ∪ B) = P(A) + P(B) - P(A) * P(B)$
 
 ## Mutually Exclusive Events
 
-P(A ∩ B) = 0  
+$P(A ∩ B) = 0$  
 So,  
-P(A ∪ B) = P(A) + P(B)
+$P(A ∪ B) = P(A) + P(B)$
 
 ## Gaussian/Normal Distribution
 
-Represented as x ~ N(μ, σ²)  
+Represented as: x ~ N(μ, σ²)
+
 where,  
 x = random variable  
 N = normal distribution  
@@ -31,7 +32,8 @@ N = normal distribution
 
 ## Standard Normal Distribution
 
-z ~ N(0, 1)  
+z ~ N(0, 1)
+
 where,  
 z = random variable  
 μ = 0  

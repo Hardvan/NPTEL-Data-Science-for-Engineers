@@ -50,7 +50,7 @@ as.numeric("Hello") # NA
 # -------------------------------------
 # vector            |       Ordered collection of elements of same type
 # list              |       Ordered collection of elements of different type
-# data frame        |       Generic tabular object where
+# data frame        |       Generic tabular object for storing data in rows and columns
 
 # ? Vectors
 x <- c(1, 2, 3, 4, 5) # c() is used to create a vector
@@ -66,7 +66,11 @@ print(emp.list)
 
 # Accessing components of a list
 # by name
-emp.list <- list("ID" = id, "Names" = emp.name, "Total Staff" = num.emp)
+emp.list <- list(
+    "ID" = id,
+    "Names" = emp.name,
+    "Total Staff" = num.emp
+)
 print(emp.list$Names)
 
 # by index
@@ -80,8 +84,8 @@ print(emp.list[[2]][1]) # John
 
 # Modify components of a list
 print("Modify")
-emp.list["Total Staff"] <- 5
-emp.list[[2]][2] <- "Jim Halpert"
+emp.list["Total Staff"] <- 5 # Add new component
+emp.list[[2]][2] <- "Jim Halpert" # Modify existing component
 emp.list[[1]][1] <- 5
 print(emp.list)
 

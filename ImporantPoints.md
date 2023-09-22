@@ -59,5 +59,5 @@ $\bar{y}$ = Mean of $y$
 $F = \frac{SSR/p}{SSE/(n-p-1)}$
 
 where,  
-n = no. of observations  
-p = no. of independent variables
+$n$ = no. of observations  
+$p$ = no. of independent variables

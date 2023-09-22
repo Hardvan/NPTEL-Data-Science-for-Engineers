@@ -8,10 +8,14 @@ pd <- data.frame(
 )
 print(pd)
 
+library(reshape2) # for melt(), dcast(), recast() functions
+
 # Step 1: Melt
 print("Melted Dataframe")
-library(reshape2)
-Df <- melt(pd, id.vars = c("Name", "Month"), measure.vars = c("BS", "BP"))
+Df <- melt(pd,
+    id.vars = c("Name", "Month"),
+    measure.vars = c("BS", "BP")
+)
 print(Df)
 
 # Step 2: Cast
@@ -25,14 +29,15 @@ print(Df2)
 # Recasting in one step
 print("Recasting in one step")
 Df3 <- recast(pd,
-    variable + Month ~ Name, # Means variable and month to remain as is, Cast "Name" as columns
-    id.var = c("Name", "Month")
+    variable + Month ~ Name, # Cast step
+    id.var = c("Name", "Month") # Melt step
 )
 print(Df3)
 
+library(dplyr) # for mutate(), various join functions
+
 # Add new variable to dataframe based on existing ones
 print("Add new variable to dataframe based on existing ones")
-library(dplyr)
 pd2 <- mutate(pd, log_BP = log(BP))
 print(pd2)
 

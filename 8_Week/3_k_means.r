@@ -34,7 +34,7 @@ for (i in 1:k.max) {
 plot(1:k.max, wss,
     type = "b",
     xlab = "No. of clusters K",
-    ylab = "Total within-groups sum of squares:Trips"
+    ylab = "Total within-groups sum of squares: Trips"
 )
 
 # From the graph, we can see that the elbow is at 3

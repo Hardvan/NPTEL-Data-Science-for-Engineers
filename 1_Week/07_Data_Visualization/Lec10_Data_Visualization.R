@@ -8,7 +8,8 @@ plot(Y)
 # 32 observations on 11 variables
 plot(mtcars$wt, mtcars$mpg,
     main = "Scatterplot of wt vs. mpg",
-    xlab = "Car Weight", ylab = "Miles per Gallon",
+    xlab = "Car Weight",
+    ylab = "Miles per Gallon",
     pch = 19 # pch = 19 : solid circle
 )
 
@@ -22,7 +23,8 @@ H <- c(7, 12, 28, 3, 41)
 M <- c("Jan", "Feb", "Mar", "Apr", "May")
 barplot(H,
     names.arg = M,
-    xlab = "Month", ylab = "Revenue",
+    xlab = "Month",
+    ylab = "Revenue",
     col = "blue",
     main = "Monthly Revenue"
 )
